@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Floor 貳樓 | 城市中的早午餐綠洲</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        morandiBlue: '#7B9095',
+                        morandiGray: '#A3A9A6',
+                        morandiGreen: '#8E9775',
+                        morandiBeige: '#F2F2F2',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif; background-color: #F2F2F2; }
+        .menu-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <!-- 導覽列 -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-widest text-morandiBlue">SECOND FLOOR</div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-morandiBlue transition">關於我們</a>
+                <a href="#menu" class="hover:text-morandiBlue transition">最新菜單</a>
+                <a href="#contact" class="hover:text-morandiBlue transition">聯絡我們</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主視覺 (Hero Section) -->
+    <section class="h-screen flex items-center justify-center bg-morandiGray text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-light mb-4 tracking-tight">美好的早晨從這裡開始</h1>
+            <p class="text-lg md:text-xl font-light tracking-widest opacity-90">貳樓，像家一樣的溫暖存在</p>
+            <a href="#menu" class="mt-8 inline-block px-8 py-3 border border-white hover:bg-white hover:text-morandiGray transition duration-300">探索菜單</a>
+        </div>
+    </section>
+
+    <!-- 關於我們 -->
+    <section id="about" class="py-24 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-light text-morandiGreen mb-8 tracking-widest">ABOUT US</h2>
+        <p class="leading-loose text-gray-500 mb-6">
+            「貳樓」不只是一間餐廳，更是一個分享生活點滴的空間。<br>
+            我們堅持使用新鮮食材，將美式早午餐的豐盛與台灣在地的人情味完美結合。<br>
+            簡約的空間設計，搭配我們精心研發的料理，讓每一位造訪的客人都能感受到自在與平靜。
+        </p>
+        <div class="w-16 h-1 bg-morandiGreen mx-auto"></div>
+    </section>
+
+    <!-- 最新菜單 -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-light text-morandiBlue mb-2 tracking-widest">LATEST MENU</h2>
+                <p class="text-gray-400">精挑細選的味覺饗宴</p>
+            </div>
+
+            <!-- 六欄式卡片佈局 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
+                <!-- 分享盤 -->
+                <div class="menu-card bg-morandiBeige p-6 rounded-lg text-center">
+                    <h3 class="font-medium text-morandiBlue mb-4">分享盤</h3>
+                    <p class="text-xs text-gray-500 mb-2">水牛城辣雞翅</p>
+                    <p class="text-sm font-semibold mb-4">$280</p>
+                    <button class="text-xs border border-morandiBlue px-3 py-1 rounded hover:bg-morandiBlue hover:text-white transition">More</button>
+                </div>
+                <!-- 早午餐 -->
+                <div class="menu-card bg-morandiBeige p-6 rounded-lg text-center">
+                    <h3 class="font-medium text-morandiBlue mb-4">早午餐</h3>
+                    <p class="text-xs text-gray-500 mb-2">經典班尼迪克蛋</p>
+                    <p class="text-sm font-semibold mb-4">$360</p>
+                    <button class="text-xs border border-morandiBlue px-3 py-1 rounded hover:bg-morandiBlue hover:text-white transition">More</button>
+                </div>
+                <!-- 開放三明治 -->
+                <div class="menu-card bg-morandiBeige p-6 rounded-lg text-center">
+                    <h3 class="font-medium text-morandiBlue mb-4">開放三明治</h3>
+                    <p class="text-xs text-gray-500 mb-2">酪梨燻鮭魚</p>
+                    <p class="text-sm font-semibold mb-4">$320</p>
+                    <button class="text-xs border border-morandiBlue px-3 py-1 rounded hover:bg-morandiBlue hover:text-white transition">More</button>
+                </div>
+                <!-- 主餐 -->
+                <div class="menu-card bg-morandiBeige p-6 rounded-lg text-center">
+                    <h3 class="font-medium text-morandiBlue mb-4">主餐</h3>
+                    <p class="text-xs text-gray-500 mb-2">曙光汁鮮蝦麵</p>
+                    <p class="text-sm font-semibold mb-4">$380</p>
+                    <button class="text-xs border border-morandiBlue px-3 py-1 rounded hover:bg-morandiBlue hover:text-white transition">More</button>
+                </div>
+                <!-- 甜點 -->
+                <div class="menu-card bg-morandiBeige p-6 rounded-lg text-center">
+                    <h3 class="font-medium text-morandiBlue mb-4">甜點</h3>
+                    <p class="text-xs text-gray-500 mb-2">強強黑巧克力蛋糕</p>
+                    <p class="text-sm font-semibold mb-4">$200</p>
+                    <button class="text-xs border border-morandiBlue px-3 py-1 rounded hover:bg-morandiBlue hover:text-white transition">More</button>
+                </div>
+                <!-- 飲品 -->
+                <div class="menu-card bg-morandiBeige p-6 rounded-lg text-center">
+                    <h3 class="font-medium text-morandiBlue mb-4">飲品</h3>
+                    <p class="text-xs text-gray-500 mb-2">冰滴咖啡</p>
+                    <p class="text-sm font-semibold mb-4">$160</p>
+                    <button class="text-xs border border-morandiBlue px-3 py-1 rounded hover:bg-morandiBlue hover:text-white transition">More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡資訊 -->
+    <section id="contact" class="py-20 bg-morandiBeige">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-light text-morandiGreen mb-8 tracking-widest">FIND US</h2>
+                <div class="space-y-4 text-gray-600">
+                    <p><i class="fas fa-map-marker-alt w-6"></i> 台北市大安區師大路 2 號</p>
+                    <p><i class="fas fa-phone w-6"></i> (02) 2362-2233</p>
+                    <p><i class="fas fa-clock w-6"></i> Mon - Sun | 10:00 - 21:30</p>
+                </div>
+            </div>
+            <div class="h-80 bg-gray-200 rounded-lg overflow-hidden shadow-inner">
+                <!-- 嵌入 Google Map -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.1116666!2d121.528!3d25.026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDAxJzM0LjUiTiAxMjHCsDMxJzQwLjgiRQ!5e0!3m2!1szh-TW!2stw!4v1620000000000!5m2!1szh-TW!2stw" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="py-12 bg-white text-center">
+        <div class="flex justify-center space-x-6 mb-6">
+            <a href="#" class="text-gray-400 hover:text-morandiBlue text-2xl transition"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-gray-400 hover:text-morandiBlue text-2xl transition"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="text-xs text-gray-400 tracking-widest uppercase">© 2026 Second Floor Restaurant. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // 簡單的捲動效果處理 (如果有需要更複雜的 JS 邏輯可在此添加)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
